@@ -7,7 +7,6 @@ import logging
 import jwt
 from app.services.firestore import Firestore
 from app.models.user import *
-from google.cloud import translate
 from google.oauth2 import service_account
 from datetime import datetime
 
@@ -52,4 +51,3 @@ def get_claims(f):
 def get_server_date():
     d = datetime.timestamp(datetime.now())
     return d
-
